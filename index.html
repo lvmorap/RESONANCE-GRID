@@ -1423,7 +1423,7 @@
             
             // Rules
             const rules = [
-                '🎯 Claim territory by moving through hexagon cells',
+                '🎯 Claim territory by moving through hexagonal cells',
                 '⚡ Resonance Zone (gold) moves every 15 seconds',
                 '🤝 Both players near zone = HARMONY BONUS (+3 each)',
                 '🎮 Arrow keys to move • Space to start'
@@ -1555,7 +1555,7 @@
             ctx.textAlign = 'center';
             ctx.globalAlpha = 0.7;
             
-            ctx.fillText(`Harmony Bonuses Earned: ${state.harmonyBonuses.player + state.harmonyBonuses.ai}`, CONFIG.CANVAS_WIDTH / 2, 380);
+            ctx.fillText(`Total Harmony Bonuses: ${state.harmonyBonuses.player + state.harmonyBonuses.ai}`, CONFIG.CANVAS_WIDTH / 2, 380);
             ctx.fillText(`Territory Claimed: Player ${state.territoryClaimed.player} | AI ${state.territoryClaimed.ai}`, CONFIG.CANVAS_WIDTH / 2, 410);
             ctx.restore();
             
